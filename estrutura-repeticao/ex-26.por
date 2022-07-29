@@ -3,72 +3,151 @@ programa
 	
 	funcao inicio()
 	{
-		/*
-		. Faça um programa que leia cinco grupos de quatro valores (A, B, C, D) e mostre-os na ordem lida. 
-		Em seguida, organize-os em ordem crescente e decrescente.
-		*/
+		inteiro a, b, c, d
 
-		inteiro num1, num2, num3, num4
-
-		para(inteiro i = 1; i <= 5; i++){
+		para(inteiro i = 1; i<= 5; i++){
 			
-			escreva("Numero 01: ")
-			leia(num1)
-
-			escreva("Numero 02: ")
-			leia(num2)
-
-			escreva("Numero 03: ")
-			leia(num3)
-
-			escreva("Numero 04: ")
-			leia(num4)
-
-			escreva(num1+", "+num2+", "+num3+", "+num4+"\n")
+			escreva("Numero 1: ")
+			leia(a)
+	
+			escreva("Numero 2: ")
+			leia(b)
+	
+			escreva("Numero 3: ")
+			leia(c)
+	
+			escreva("Numero 4: ")
+			leia(d)
+			
+			escreva("Ordem Lida: "+a+", "+b+", "+c+", "+d+"\n")
 
 			/*Ordem Crescente dos Numeros*/
-			se(num1 < num2 e num1 < num3 e num1 < num4){
-				se(num2 < num3 e num3 < num4){
-					escreva("A ordem crescente dos números é: "+num1+", "+num2+", "+num3+", "+num4+"\n")
-				}senao se(num4 < num3){
-					escreva("A ordem crescente dos números é: "+num1+", "+num2+", "+num4+", "+num3+"\n")
-				}						
-			}
-
-			se(num2 < num1 e num2 < num3 e num2 < num4){
-				se(num1 < num3 e num3 < num4){
-					escreva("1 A ordem crescente dos números é: "+num2+", "+num1+", "+num3+", "+num4+"\n")
-				}senao se(num4 < num3){
-					escreva("2 A ordem crescente dos números é: "+num2+", "+num1+", "+num4+", "+num3+"\n")
-				}	
-
-				se(num3 < num1 e num1 < num4){
-					escreva("3 A ordem crescente dos números é: "+num2+", "+num3+", "+num1+", "+num4+"\n")
-				}senao se(num4 < num1){
-					escreva("4 A ordem crescente dos números é: "+num2+", "+num3+", "+num4+", "+num1+"\n")
+			se(a < b e a < c e a < d){
+				se(b < c e b < d){
+					se(c < d){
+						escreva("Ordem Crescente dos Números: "+a+", "+b+", "+c+", "+d+"\n")
+						escreva("Ordem Decrescente dos Números: "+d+", "+c+", "+b+", "+a+"\n")	
+					}senao{
+						escreva("Ordem Crescente dos Números: "+a+", "+b+", "+d+", "+c+"\n")
+						escreva("Ordem Decrescente dos Números: "+c+", "+d+", "+b+", "+a+"\n")
+					}
 				}
 
-				se(num4 < num1 e num4 < num3){
-					escreva("5 A ordem crescente dos números é: "+num2+", "+num4+", "+num1+", "+num3+"\n")
-				}senao se(num3 < num1){
-					escreva("6 A ordem crescente dos números é: "+num2+", "+num4+", "+num3+", "+num1+"\n")
-				}						
-			}
+				se(c < b e c < d){
+					se(b < d){
+						escreva("Ordem Crescente dos Números: "+a+", "+c+", "+b+", "+d+"\n")
+						escreva("Ordem Decrescente dos Números: "+d+", "+b+", "+c+", "+a+"\n")
+					}senao{
+						escreva("Ordem Crescente dos Números: "+a+", "+c+", "+d+", "+b+"\n")
+						escreva("Ordem Decrescente dos Números: "+b+", "+d+", "+c+", "+a+"\n")
+					}
+				}
 
-			se(num3 < num1 e num3 < num2 e num3 < num4){
-				se(num1 < num2 e num2 < num4){
-					escreva("A ordem crescente dos números é: "+num3+", "+num1+", "+num2+", "+num4+"\n")
-				}senao se(num4 < num2){
-					escreva("A ordem crescente dos números é: "+num3+", "+num1+", "+num4+", "+num2+"\n")
+				se(d < b e d < c){
+					se(b < c){
+						escreva("Ordem Crescente dos Números: "+a+", "+d+", "+b+", "+c+"\n")
+						escreva("Ordem Decrescente dos Números: "+c+", "+b+", "+d+", "+a+"\n")
+					}senao{
+						escreva("Ordem Crescente dos Números: "+a+", "+d+", "+c+", "+b+"\n")
+						escreva("Ordem Decrescente dos Números: "+b+", "+c+", "+d+", "+a+"\n")
+					}
 				}
 			}
 
-			se(num4 < num1 e num4 < num2 e num4 < num3){
-				se(num1 < num2 e num2 < num3){
-					escreva("A ordem crescente dos números é: "+num4+", "+num1+", "+num2+", "+num3+"\n")
-				}senao se(num3 < num2){
-					escreva("A ordem crescente dos números é: "+num4+", "+num1+", "+num3+", "+num2+"\n")
-				}						
+			se(b < a e b < c e b < d){
+				se(a < c e a < d){
+					se(c < d){
+						escreva("Ordem Crescente dos Números: "+b+", "+a+", "+c+", "+d+"\n")
+						escreva("Ordem Decrescente dos Números: "+d+", "+c+", "+a+", "+b+"\n")
+					}senao{
+						escreva("Ordem Crescente dos Números: "+b+", "+a+", "+d+", "+c+"\n")
+						escreva("Ordem Decrescente dos Números: "+c+", "+d+", "+a+", "+b+"\n")
+					}
+				}
+
+				se(c < a e c < d){
+					se(a < d){
+						escreva("Ordem Crescente dos Números: "+b+", "+c+", "+a+", "+d+"\n")
+						escreva("Ordem Decrescente dos Números: "+d+", "+a+", "+c+", "+b+"\n")
+					}senao{
+						escreva("Ordem Crescente dos Números: "+b+", "+c+", "+d+", "+a+"\n")
+						escreva("Ordem Decrescente dos Números: "+a+", "+d+", "+c+", "+b+"\n")
+					}
+				}
+
+				se(d < a e d < c){
+					se(a < c){
+						escreva("Ordem Crescente dos Números: "+b+", "+d+", "+a+", "+c+"\n")
+						escreva("Ordem Decrescente dos Números: "+c+", "+a+", "+d+", "+b+"\n")
+					}senao{
+						escreva("Ordem Crescente dos Números: "+b+", "+d+", "+c+", "+a+"\n")
+						escreva("Ordem Decrescente dos Números: "+a+", "+c+", "+d+", "+b+"\n")
+					}
+				}
+			}
+
+			se(c < a e c < b e c < d){
+				se(a < b e a < d){
+					se(b < d){
+						escreva("Ordem Crescente dos Números: "+c+", "+a+", "+b+", "+d+"\n")
+						escreva("Ordem Decrescente dos Números: "+d+", "+b+", "+a+", "+c+"\n")
+					}senao{
+						escreva("Ordem Crescente dos Números: "+c+", "+a+", "+d+", "+b+"\n")
+						escreva("Ordem Decrescente dos Números: "+b+", "+d+", "+a+", "+c+"\n")
+					}
+				}
+
+				se(b < a e b < d){
+					se(a < d){
+						escreva("Ordem Crescente dos Números: "+c+", "+b+", "+a+", "+d+"\n")
+						escreva("Ordem Decrescente dos Números: "+d+", "+a+", "+b+", "+c+"\n")	
+					}senao{
+						escreva("Ordem Crescente dos Números: "+c+", "+b+", "+d+", "+a+"\n")
+						escreva("Ordem Decrescente dos Números: "+a+", "+d+", "+b+", "+c+"\n")
+					}
+				}
+
+				se(d < a e d < b){
+					se(a < b){
+						escreva("Ordem Crescente dos Números: "+c+", "+d+", "+a+", "+b+"\n")
+						escreva("Ordem Decrescente dos Números: "+b+", "+a+", "+d+", "+c+"\n")
+					}senao{
+						escreva("Ordem Crescente dos Números: "+c+", "+d+", "+b+", "+a+"\n")
+						escreva("Ordem Decrescente dos Números: "+a+", "+b+", "+d+", "+c+"\n")
+					}
+				}
+			}
+
+			se(d < a e d < b e d < c){
+				se(a < b e a < c){
+					se(b < c){
+						escreva("Ordem Crescente dos Números: "+d+", "+a+", "+b+", "+c+"\n")
+						escreva("Ordem Decrescente dos Números: "+c+", "+b+", "+a+", "+d+"\n")
+					}senao{
+						escreva("Ordem Crescente dos Números: "+d+", "+a+", "+c+", "+b+"\n")
+						escreva("Ordem Decrescente dos Números: "+b+", "+c+", "+a+", "+d+"\n")
+					}
+				}
+
+				se(b < a e b < c){
+					se(a < c){
+						escreva("Ordem Crescente dos Números: "+d+", "+b+", "+a+", "+c+"\n")
+						escreva("Ordem Decrescente dos Números: "+c+", "+a+", "+b+", "+d+"\n")
+					}senao{
+						escreva("Ordem Crescente dos Números: "+d+", "+b+", "+c+", "+a+"\n")
+						escreva("Ordem Decrescente dos Números: "+a+", "+c+", "+b+", "+d+"\n")
+					}
+				}
+
+				se(c < a e c < b){
+					se(a < b){
+						escreva("Ordem Crescente dos Números: "+d+", "+c+", "+a+", "+b+"\n")
+						escreva("Ordem Decrescente dos Números: "+b+", "+a+", "+c+", "+d+"\n")
+					}senao{
+						escreva("Ordem Crescente dos Números: "+d+", "+c+", "+b+", "+a+"\n")
+						escreva("Ordem Decrescente dos Números: "+a+", "+b+", "+c+", "+d+"\n")
+					}
+				}
 			}
 		}
 	}
@@ -78,7 +157,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1574; 
+ * @POSICAO-CURSOR = 4928; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
