@@ -46,114 +46,111 @@ programa
 			escreva("Operação: ")
 			leia(operacao)
 
-			se(operacao > 0 e operacao < 5){
 
-				escolha(operacao){
-					caso 1:
-						escreva("Número da Conta: ")
-						leia(num_conta)
-
-						enquanto(i < 10){
-							
-							se(num_conta == contas[i]){
-								existe = verdadeiro
-								pare
-							}
-
-							i++
-						}
-						
-						se(existe == verdadeiro){
-							escreva("NÚMERO DA CONTA: "+contas[i]+"\n")
-							escreva("Valor do Depósito: ")
-							leia(valor)
-
-							saldo[i] += valor
-							escreva("Operação realizada com sucesso\n")
-							existe = falso
-						}senao{
-							escreva("Essa Conta Não Existe\n")
-							existe = falso
-							i = 0
-						}
-					pare
-
-					caso 2:
-						escreva("Número da Conta: ")
-						leia(num_conta)
-
-						enquanto(i < 10){
-							
-							se(num_conta == contas[i]){
-								existe = verdadeiro
-								pare
-							}
-
-							i++
-						}
-						
-						se(existe == verdadeiro){
-							escreva("NÚMERO DA CONTA: "+contas[i]+"\n")
-							escreva("Valor do Saque: ")
-							leia(valor)
-
-							se(valor <= saldo[i]){
-								saldo[i] -= valor
-								escreva("Operação realizada com sucesso\n")
-							}senao{
-								escreva("Saldo Insuficiente\n")
-								escreva("SALDO ATUAL: "+saldo[i]+"\n")							
-							}
-							existe = falso
-						}senao{
-							escreva("Essa Conta Não Existe\n")
-							existe = falso
-							i = 0
-						}
-					pare
-
-					caso 3:
-						escreva("Número da Conta: ")
-						leia(num_conta)
-
-						enquanto(i < 10){
-							
-							se(num_conta == contas[i]){
-								existe = verdadeiro
-								pare
-							}
-
-							i++
-						}
-						
-						se(existe == verdadeiro){
-							escreva("NÚMERO DA CONTA......:: "+contas[i]+"\n")
-							escreva("SALDO................:: "+mat.arredondar(saldo[i], 2)+"R$\n")
-							existe = falso
-						}senao{
-							escreva("Essa Conta Não Existe\n")
-							existe = falso
-							i = 0
-						}
-					pare
-
-					caso 4:
-						escreva("ATIVO BANCÁRIO\n")
-						para(i = 0; i < 10; i++){
-							saldo_total += saldo[i]
-						}
-
-						escreva("Saldo Total.......:: "+mat.arredondar(saldo_total, 2)+"\n")
-					pare
-
-					caso contrario:
-						escreva("Operação Inválida\n")
-					pare
-				}
+			escolha(operacao){
+				caso 1:
+					escreva("Número da Conta: ")
+					leia(num_conta)
+					enquanto(i < 10){
 				
-			}senao{
-				escreva("Encerrando Aplicação\n")
+						se(num_conta == contas[i]){
+							existe = verdadeiro
+							pare
+						}
+
+						i++
+					}
+						
+					se(existe == verdadeiro){
+						escreva("NÚMERO DA CONTA: "+contas[i]+"\n")
+						escreva("Valor do Depósito: ")
+						leia(valor)
+						saldo[i] += valor
+						escreva("Operação realizada com sucesso\n")
+						existe = falso
+					}senao{
+						escreva("Essa Conta Não Existe\n")
+						existe = falso
+						i = 0
+					}
+				pare
+
+				caso 2:
+					escreva("Número da Conta: ")
+					leia(num_conta)
+
+					enquanto(i < 10){
+							
+						se(num_conta == contas[i]){
+							existe = verdadeiro
+							pare
+						}
+
+						i++
+					}
+						
+					se(existe == verdadeiro){
+						escreva("NÚMERO DA CONTA: "+contas[i]+"\n")
+						escreva("Valor do Saque: ")
+						leia(valor)
+
+						se(valor <= saldo[i]){
+							saldo[i] -= valor
+							escreva("Operação realizada com sucesso\n")
+						}senao{
+							escreva("Saldo Insuficiente\n")
+							escreva("SALDO ATUAL: "+saldo[i]+"\n")							
+						}
+						existe = falso
+					}senao{
+						escreva("Essa Conta Não Existe\n")
+						existe = falso
+						i = 0
+					}
+				pare
+
+				caso 3:
+					escreva("Número da Conta: ")
+					leia(num_conta)
+					enquanto(i < 10){
+							
+						se(num_conta == contas[i]){
+							existe = verdadeiro
+							pare
+						}
+
+						i++
+					}
+						
+					se(existe == verdadeiro){
+						escreva("NÚMERO DA CONTA......:: "+contas[i]+"\n")
+						escreva("SALDO................:: "+mat.arredondar(saldo[i], 2)+"R$\n")
+						existe = falso
+					}senao{
+						escreva("Essa Conta Não Existe\n")
+						existe = falso
+						i = 0
+					}
+				pare
+
+				caso 4:
+					escreva("ATIVO BANCÁRIO\n")
+					para(i = 0; i < 10; i++){
+						saldo_total += saldo[i]
+					}
+
+					escreva("Saldo Total.......:: "+mat.arredondar(saldo_total, 2)+"\n")
+				pare
+
+				caso 5:
+					escreva("Encerrando Aplicação\n")
+				pare
+
+				caso contrario:
+					escreva("Operação Inválida\n")
+				pare
 			}
+				
 		}enquanto(operacao != 5)
 	}
 }
@@ -162,7 +159,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2781; 
+ * @POSICAO-CURSOR = 3111; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
