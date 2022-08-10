@@ -1,6 +1,6 @@
 programa
 {
-	inclua biblioteca Util --> u
+	inclua biblioteca Util --> u
 	funcao inicio()
 	{
 		/*
@@ -10,7 +10,7 @@ programa
 			e sua localização.
 		*/
 		inteiro numeros[5][7], i, j, linha, coluna, maior, menor
-
+		menor = 0
 		para(i = 0; i < 5; i++){
 			para(j = 0; j < 7; j++){
 				numeros[i][j] = u.sorteia(1, 99)
@@ -24,11 +24,12 @@ programa
 			escreva("\n")
 		}
 
-		menor = numeros[0][0]
 		linha = 0
 		coluna = 0
 
 		para(i = 0; i < 5; i++){
+			//Pegando o primeiro elemento de cada linha
+			menor = numeros[i][0]
 			para(j = 0; j < 7; j++){
 				se(menor > numeros[i][j]){
 					menor = numeros[i][j]
@@ -65,7 +66,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 566; 
+ * @POSICAO-CURSOR = 470; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
