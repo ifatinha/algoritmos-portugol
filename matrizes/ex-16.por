@@ -21,7 +21,7 @@ programa
 		/*Pegando o maior elemento de cada uma das linhas*/
 		para(i = 0; i < 7; i++){
 			maior = numeros[i][0]
-			para(j = 0; j < 7; j++){
+			para(j = 1; j < 7; j++){
 				se(maior < numeros[i][j]){
 					maior = numeros[i][j]
 				}
@@ -38,7 +38,7 @@ programa
 		/*Pegando o menor elemento de cada coluna*/
 		para(j = 0; j < 7; j++){
 			menor = numeros[0][j]
-			para(i = 0; i < 7; i++){
+			para(i = 1; i < 7; i++){
 				se(menor > numeros[i][j]){
 					menor = numeros[i][j]
 				}
@@ -46,7 +46,7 @@ programa
 			menores[j] = menor
 		}
 
-		escreva("\nMenores elementos de cada linha\n")
+		escreva("\n\nMenores elementos de cada linha\n")
 		para(i = 0; i < 7; i++){
 			escreva(menores[i]+" ")
 		}
@@ -57,7 +57,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1008; 
+ * @POSICAO-CURSOR = 803; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
