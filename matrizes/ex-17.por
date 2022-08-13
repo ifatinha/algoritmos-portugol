@@ -15,7 +15,7 @@ programa
 		cont_ab = 0
 
 		enquanto(cont_ac < 10 ou cont_ab < 10 ou cont_dp < 5){
-			numero = u.sorteia(1, 9999)
+			numero = u.sorteia(10, 99)
 
 			se(numero % 5 == 0){
 				se(cont_dp < 5){
@@ -73,7 +73,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 356; 
+ * @POSICAO-CURSOR = 351; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
