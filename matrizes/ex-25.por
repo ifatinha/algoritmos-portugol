@@ -82,6 +82,17 @@ programa
 
 			escreva("Total Vendido Loja "+i+": "+mat.arredondar(total_l, 2)+"R$\n")
 		}
+
+		/*Total de Cada Produto Vendido no Bimestre*/
+		escreva("\nTotal de Venda de Cada Produto no Bimestre\n")
+		para(i = 0; i < 5; i++){
+			total_p = 0.0
+			para(j = 0; j < 3; j++){
+				total_p += bim[i][j]
+			}
+
+			escreva("Total Produdo "+i+": "+mat.arredondar(total_p, 2)+"\n")
+		}
 		
 	}
 }
@@ -90,7 +101,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1572; 
+ * @POSICAO-CURSOR = 231; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
