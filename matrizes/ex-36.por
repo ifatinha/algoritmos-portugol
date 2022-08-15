@@ -83,28 +83,6 @@ programa
 			para(j = 0; j < 5; j++){
 				 se(qtd_p[i][j] == 0){
 				 	
-				 	se(i == 0 e j == 0){
-				 		vet[count] = idades[i]
-				 	}
-
-				 	para(k = 0; k < count; k++){
-				 		se(vet[count] == idades[i]){
-				 			existe = verdadeiro
-				 			pare
-				 		}
-				 	}
-
-				 	se(existe == falso){
-				 		vet[count] = idades[i]
-				 		existe = falso
-				 		escreva("Aluno.......:: "+alunos[i]+"\n")
-						escreva("Idade.......:: "+idades[i]+"\n")
-						escreva("Disciplina..:: "+disciplinas[j]+"\n")
-						escreva("Provas......:: "+qtd_p[i][j]+"\n")
-						escreva("\n")
-				 	}senao{
-				 		existe = falso
-				 	}
 				 }
 			}
 		}
@@ -115,7 +93,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2701; 
+ * @POSICAO-CURSOR = 2170; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
