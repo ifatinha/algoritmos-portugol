@@ -1,6 +1,7 @@
 programa
 {
-	inclua biblioteca Util --> u
+	inclua biblioteca Util --> u
+	inclua biblioteca Matematica --> mat
 	funcao inicio()
 	{
 		cadeia alunos[8] = {"Fatinha", "Eliane", "Juan", "Elizani", "Emilia", "Helloisa",
@@ -82,10 +83,26 @@ programa
 		para(i = 0; i < 8; i++){
 			para(j = 0; j < 5; j++){
 				 se(qtd_p[i][j] == 0){
-				 	
+				 	existe = verdadeiro
+				 	count = j
+				 	pare
 				 }
 			}
+
+			se(existe == verdadeiro){
+				escreva("Aluno.......:: "+alunos[i]+"\n")
+				escreva("Idade.......:: "+idades[i]+"\n")
+				escreva("Disciplina..:: "+disciplinas[count]+"\n")
+				escreva("Provas......:: "+qtd_p[i][count]+"\n")
+				escreva("\n")
+				media_i += idades[i]
+				qtd_i++
+				existe = falso
+			}
 		}
+		media_i = media_i / qtd_i
+		escreva("Média dos alunos que não fizeram nenhum prova e alguma disciplina: "
+			+mat.arredondar(media_i, 2)+"\n")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -93,7 +110,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2170; 
+ * @POSICAO-CURSOR = 2718; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
