@@ -27,8 +27,8 @@ programa
 		para(i = 0; i < 10; i++){
 			fatorial = 1
 			
-			para(j = 0; j < num1[i]; j++){
-				fatorial = fatorial * 1	
+			para(j = 1; j <= num1[i]; j++){
+				fatorial = fatorial * j	
 			}
 
 			num2[i] = fatorial
@@ -41,7 +41,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 578; 
+ * @POSICAO-CURSOR = 630; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
