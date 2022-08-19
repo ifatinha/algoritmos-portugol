@@ -38,14 +38,7 @@ programa
 
 		//Ordenando o Vetor A
 		para(i = 0; i < 10; i++){
-			para(j = 0; j < 10; j++){
-				se(vet1[j] > vet3[count]){
-					aux = vet1[j]
-					vet1[j] = vet3[count]
-					vet3[count] = aux
-					count++
-				}
-			}
+			
 		}
 	}
 }
@@ -54,7 +47,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 852; 
+ * @POSICAO-CURSOR = 763; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
