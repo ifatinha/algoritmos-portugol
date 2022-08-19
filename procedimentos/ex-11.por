@@ -123,13 +123,19 @@ programa
 		
 		retorne count
 	}
+
+	/*Lendos as informações*/ 
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
+<<<<<<< Updated upstream
  * @POSICAO-CURSOR = 726; 
+=======
+ * @POSICAO-CURSOR = 122; 
+>>>>>>> Stashed changes
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
