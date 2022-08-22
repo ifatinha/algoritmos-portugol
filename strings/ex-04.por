@@ -1,8 +1,8 @@
 programa
 {	
 	/*
-	Faça um programa que receba uma frase e mostre as letras que se repetem, junto com o número de
-	repetições.
+	Faça um programa que receba uma frase e mostre as letras que se repetem, 
+	junto com o número de repetições.
 	*/
 	
 	inclua biblioteca Texto --> t
@@ -28,7 +28,6 @@ programa
 
 		para(i = 0; i < tamanho; i++){
 			 aux = t.obter_caracter(texto, i)
-			 
 			 se(aux == tipos.cadeia_para_caracter(t.caixa_alta(c)) ou 
 			 	aux == tipos.cadeia_para_caracter(t.caixa_baixa(c))){
 			 	qtd++
@@ -42,7 +41,7 @@ programa
 	funcao mostrarLetrasRepetidas(cadeia texto){
 		inteiro i, tamanho, qtd
 		cadeia letra
-		
+				
 		tamanho = t.numero_caracteres(texto)
 		
 		para(i = 0; i < tamanho; i++){
@@ -61,7 +60,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 231; 
+ * @POSICAO-CURSOR = 884; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
