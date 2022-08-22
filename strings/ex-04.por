@@ -1,5 +1,5 @@
 programa
-{	
+{	
 	/*
 	Faça um programa que receba uma frase e mostre as letras que se repetem, junto com o número de
 	repetições.
@@ -61,7 +61,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 939; 
+ * @POSICAO-CURSOR = 231; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
