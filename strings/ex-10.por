@@ -12,10 +12,9 @@ programa
 		cadeia frase, palavra1, palavra2, nova_frase
 
 		frase = "Eu sou aluno da escola"
-
-		nova_frase = trocarPalavra(frase, "aluno", "estudante")
 		escreva(frase+"\n")
-		nova_frase = trocarPalavra(frase, "escola", "universidade")
+		nova_frase = trocarPalavra(frase, "aluno", "estudante")
+		nova_frase = trocarPalavra(nova_frase, "escola", "universidade")
 		escreva("\n"+nova_frase+"\n")
 	}
 
@@ -61,7 +60,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 456; 
+ * @POSICAO-CURSOR = 357; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
