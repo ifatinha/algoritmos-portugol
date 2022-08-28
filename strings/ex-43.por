@@ -48,13 +48,32 @@ programa
 			palavra = ""
 		}enquanto(i < tamanho)
 	}
+
+	funcao cadeia substituirCaracteres(cadeia palavra){
+		cadeia nova_palavra
+		inteiro tamanho, i, metade
+		
+		nova_palavra = ""
+		tamanho = texto.numero_caracteres(palavra)
+		i = 0
+
+		se(tamanho == 1){
+			nova_palavra = "?"
+		}senao{
+			metade = tamanho / 2
+
+			
+		}
+		
+		retorne nova_palavra
+	}
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 919; 
+ * @POSICAO-CURSOR = 1232; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
