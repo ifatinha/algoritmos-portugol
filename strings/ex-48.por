@@ -39,13 +39,13 @@ programa
 			 	contador++
 			 }enquanto(contador < tamanho_sub_cadeia e i < tamanho_frase)
 
-			escreva("Escreva: "+palavra+" == "+sub_cadeia+"\n")
 			se(palavra == sub_cadeia){
 				contador2++
 			}
 			
-			contador = 0
 			palavra = ""
+			palavra += letra
+			contador = 1
 		}enquanto(i < tamanho_frase)
 
 		se(contador2 == 0){
@@ -62,7 +62,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1106; 
+ * @POSICAO-CURSOR = 1074; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
